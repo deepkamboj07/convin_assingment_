@@ -1,0 +1,33 @@
+.iButton,.Button{
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #586073;
+    padding: 10px 0;
+    margin: 5px 0;
+    margin-bottom: 0;
+    color:  white;
+    cursor: pointer;
+    background-color: #474d5d;
+    width: 100%;
+}
+.iButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    padding: 5px;
+    border: 0.2px solid #586073;
+}
+.iButton span{
+    margin-right: 0.5rem;
+}
+
+.lightChange{
+    color: black;
+    background-color: #f6f6f6c9;
+    border: 1px solid #838383e9;
+}
+
+.iButton.lightChange{
+    background-color: transparent;
+}

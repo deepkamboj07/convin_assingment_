@@ -1,0 +1,131 @@
+@import "../../Pages/mainDark.css";
+.dark_container{
+    width: 25%;
+    display: flex;
+    height: 100%;
+    overflow: auto;
+    color: white;
+    flex-direction: column;
+    background-color: #22252c;
+    border-right: 2px solid rgba(255, 255, 255, 0.064);
+    position: relative;
+}
+.light_container{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    overflow: auto;
+    color: #22252c;
+    flex-direction: column;
+    background-color: #b6bed2d3;
+    border-right: 2px solid rgba(99, 99, 99, 0.064);
+    position: relative;
+}
+
+::-webkit-scrollbar{
+    width: 3px;
+    border-radius: 10px;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #474D5D;
+}
+.ItemLists{
+    flex-grow: 1;
+    overflow: auto;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dark_container .ItemLists .butn{
+    width: 85%;
+    margin: 5px 0;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid rgba(245, 245, 245, 0.892);;
+    padding: 10px 4px;
+    background-color: transparent;
+    color: rgba(245, 245, 245, 0.892);
+    cursor: pointer;
+}
+.light_container .ItemLists .butn{
+    width: 85%;
+    margin: 5px 0;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #22252c;
+    padding: 10px 4px;
+    background-color: #e4e8f5;
+    color: black;
+    cursor: pointer;
+}
+
+.dark_container .ItemLists .butn.active{
+    background-color: rgba(149, 169, 187, 0.344);
+    box-shadow: 0px 2px 4px 3px rgba(157, 156, 156, 0.123),0px 2px 16px rgba(131, 130, 130, 0.178);
+}
+.light_container .ItemLists .butn.active{
+    background-color: #9ca5c1;
+    box-shadow: 0px 2px 4px 3px rgba(49, 49, 49, 0.123),0px 2px 16px rgba(58, 58, 58, 0.178);
+}
+.addList , .bottomOption{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.cross{
+    position:fixed;
+    top:5px;
+    left: 81%;
+}
+.dark_container.mobile, .light_container.mobile{
+    display: none;
+}
+
+.noSelect{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: #161616e6;
+    cursor: not-allowed;
+}
+
+.light_container .noSelect{
+    background-color: rgba(255, 255, 255, 0.712);
+}
+
+@media (max-width:970px) {
+    .dark_container, .light_container{
+        width: 32%;
+    }
+}
+@media (max-width:760px) {
+    .dark_container, .light_container{
+        width: 38%;
+    }
+}
+@media (max-width:670px) {
+    .dark_container, .light_container{
+        display: none;
+    }
+    .dark_container.mobile, .light_container.mobile{
+        display: flex;
+        position: fixed;
+        animation: animate 1s;
+        width: 80%;
+        z-index: 1;
+    }
+}
+
+@keyframes animate {
+    from{
+        width: 0%;
+    }
+    to{
+        width:80%;
+    }
+}

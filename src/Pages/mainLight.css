@@ -1,0 +1,23 @@
+.light{
+    background-color: #e4e8f5;
+    display: flex;
+    height: 100%;
+}
+
+.menu_class{
+    color: black;
+    margin: 1rem;
+    position: fixed;
+    top: 0;
+    display: none;
+    left: 4px;
+}
+.screen{
+    width: 100%;
+}
+
+@media (max-width:670px) {
+    .menu_class{
+        display: block;
+    }
+}
