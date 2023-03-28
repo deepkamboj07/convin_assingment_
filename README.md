@@ -1,5 +1,5 @@
 
-# some screenshot of user screen
+# some screenshot of user interface
 
 ![image](https://user-images.githubusercontent.com/78980433/228212116-9f555d40-df7b-4924-b342-8929f28043df.png)
 
